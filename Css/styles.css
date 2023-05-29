@@ -1,0 +1,506 @@
+body {
+	margin: 0;
+	font-family: 'Heebo', sans-serif;
+	padding-top: 70px;
+}
+.container {
+	width: 1180px;
+	max-width: 90%;
+	margin: auto;
+	padding: 0 16px;
+	
+}
+ 
+
+ul{
+	margin: 0;
+    padding: 0;
+}
+
+
+header {
+	background-color:white;
+	 box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+	 height: 70px;
+	 position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	z-index:1;
+}
+
+	header .container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	
+header .logo{
+	
+	display: inline-block;
+	font-size:27px;
+}
+header .logo a{
+		text-decoration:none;
+		color:black;
+	}
+header .logo .blue-dot {
+		background-color: blue;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		vertical-align: baseline;
+		margin: 0 4px;
+		border-radius: 5px;
+	}
+header nav{
+	
+	display: inline-block;
+	
+}
+header nav ul li{
+	display: inline-block;
+}
+	header nav ul li.menu-icon{
+		display:none;
+	}
+	header nav ul li.menu-icon img {
+		vertical-align:middle;
+		width:24px;
+		height:auto;
+	}
+
+header nav ul li a{
+	color: #3E3E3E;
+    font-size: 15px;
+  letter-spacing: 0.37px;
+  margin-right:24px;
+	text-decoration:none;
+}
+	header nav ul li a:hover {
+	color:blue;
+	}
+	header nav ul li :last-of-type a {
+		margin-right: 0;
+	}
+section.hero {
+position:relative;
+}
+	section.hero img {
+		width: 100%;
+		height: auto;
+		
+	}
+.hero-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:0;
+	
+}
+.hero-content .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
+.hero-content h1 {
+	max-width: 495px;
+	color: #FFF;
+	font-size: 44px;
+	letter-spacing: 1.1px;
+	line-height: 50px;
+	margin-bottom: 12px;
+	margin-top: 0;
+	font-weight:normal;
+
+}
+	.hero-content p {
+		max-width: 518px;
+		color: #FFF;
+		font-weight: 300;
+		font-size: 18px;
+		letter-spacing: 0.45px;
+		line-height: 26px;
+		margin-bottom: 12px;
+		margin-top: 0;
+	}
+
+
+	.hero-content button {
+		height: 50px;
+		width: 220px;
+		max-width: 100%;
+		border-radius: 92px;
+		background-color: #3e50e5;
+		color: #FFF;
+		border: none;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.35px;
+		line-height: 21px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+		.hero-content button:hover {
+			color: #3e50e5;
+			background-color: #FFF;
+			border: 1px solid #3e50e5;
+			
+		}
+		section.best-sellers {
+			padding-top: 80px;
+		}
+section.best-sellers h2 {
+	font-size: 34px;
+	letter-spacing: 0.85px;
+	line-height: 42px;
+	text-align: center;
+	font-weight:normal;
+	margin:0 0 14px 0;
+}
+section.best-sellers hr {
+	border: none;
+	border-top: 5px solid #67F11D;
+	width: 66px;
+}
+	section.best-sellers .product-slider {
+	margin-top:76px;
+	}
+	section.best-sellers .container {
+	display:flex;
+	justify-content:space-around;
+	padding:0 8px;
+	}
+	section.best-sellers .product-slider .product {
+		border-radius: 8px;
+		border: 1px solid #DDD;
+		width:33%;
+		text-align:center;
+		margin:0 8px;
+		padding:40px;
+		position:relative;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		cursor:pointer;
+	}
+			
+		section.best-sellers .product-slider .product img {
+			max-width: 100%;
+		}
+		section.best-sellers .product-slider .product.new::before {
+			content: "New";
+			background-color: red;
+			position: absolute;
+			top: 12px;
+			right: 12px;
+			color: #FFF;
+			font-family: Heebo;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 0.35px;
+			line-height: 21px;
+			text-align: center;
+			padding: 4px 15px;
+			border-radius: 40px;
+			background-color: #EC1C1C;
+		}
+	section.best-sellers .product-slider .product .product-info {
+		margin-top:50px;
+	}
+	section.best-sellers .product-slider .product .product-info .categories {
+			color: #3E50E5;
+			font-size: 14px;
+			letter-spacing: 0.35px;
+			line-height: 30px;
+			margin-bottom:8px;
+			margin-top:0;
+		}
+		section.best-sellers .product-slider .product .product-info .title {
+			color: #000;
+			font-size: 20px;
+			letter-spacing: 0.5px;
+			line-height: 26px;
+			margin-bottom: 6px;
+			font-weight: normal;
+			margin-top: 0;
+		}
+		section.best-sellers .product-slider .product .product-info .price {
+			font-size: 28px;
+			font-weight: bold;
+			letter-spacing: 0.7px;
+			line-height: 30px;
+			margin-bottom: 16px;
+			margin-top: 0;
+		}
+		section.best-sellers .product-slider .product .product-info .price .discounted-price {
+			color:red;
+		}
+			section.best-sellers .product-slider .product .product-info .price .original-price {
+				color: #9B9B9B;
+				font-weight:normal;
+				font-size: 16px;
+				letter-spacing: 0.4px;
+				line-height: 30px;
+				text-decoration:line-through;
+			}
+		section.best-sellers .product-slider .product .product-info button {
+			height: 50px;
+			width: 219.5px;
+			border: 1px solid #000;
+			border-radius: 220px;
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 0.4px;
+			line-height: 24px;
+			background-color:white;
+		}
+		section.best-sellers .product-slider .product:hover .product-info button {
+		background-color:blue;
+		border: 1px solid blue;
+		color:white;
+
+		}
+			section.newsletter {
+				background-color: rgba(200,200,200,0.18);
+				max-width: 955px;
+				text-align: center;
+				padding: 72px 0;
+				margin: 88px auto;
+			}
+	section.newsletter h3 {
+		font-size: 24px;
+		letter-spacing: 0.6px;
+		line-height: 42px;
+		font-weight:normal;
+		margin-top:0;
+		margin-bottom:10px;
+	}
+	section.newsletter p {
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 42px;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	section.newsletter form {
+		display:flex;
+		justify-content:center;
+	}
+		section.newsletter form input {
+			height: 50px;
+			width: 326px;
+			max-width: 80%;
+			border-radius: 60px 0 0 60px;
+			box-sizing: border-box;
+			border: 1px solid #3E3E3E;
+			border-right:none;
+			color: #3E3E3E;
+			font-size: 14px;
+			letter-spacing: 0.35px;
+			line-height: 21px;
+			padding-left:22px;
+		}
+		section.newsletter form button {
+			height: 50px;
+			width: 145px;
+			max-width: 20%;
+			box-sizing: border-box;
+			border-radius: 0 60px 60px 0;
+			background-color: #3E50E5;
+			border: 1px solid #3E50E5;
+			color: #FFF;
+			font-size: 14px;
+			letter-spacing: 0.35px;
+			line-height: 21px;
+			text-transform:uppercase;
+			cursor:pointer;
+		}
+		section.newsletter form button:hover {
+			
+			color: #3E50E5;
+			border: 1px solid #3E3E3E;
+			background-color: #FFF;
+		}
+footer .bottom-nav {
+	background-color: #3E3E3E;
+	padding:60px 0;
+}
+	footer .bottom-nav .container {
+	max-width:955px;
+	display:flex;
+	justify-content:space-between;
+	}
+	footer .bottom-nav ul {
+	list-style:none;
+	}
+	footer .bottom-nav ul li a {
+		color: #E0E0E0;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 22px;
+		margin-top: 0;
+		margin-bottom: 10px;
+		text-decoration:none;
+		display:block;
+	}
+	footer .bottom-nav ul li a:hover {
+			color:blue;
+		}
+	footer .bottom-nav ul li.list-title {
+		color: #FFF;
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.5px;
+		line-height: 26px;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	footer .copyright-text {
+		color: #E0E0E0;
+		background-color: #2B2B2B;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 22px;
+	}
+
+	/***********************************Css Media Queries*****************************/
+
+	
+/* Start of Design for Large Desktops */
+@media screen and (min-width:1440px) {
+	.container {
+		width:1440px;
+	}
+	header {
+		height: 80px;
+	}
+	.hero-content h1 {
+		max-width: 495px;
+		font-size: 50px;
+		letter-spacing: 1.25px;
+		line-height: 56px;
+		margin-bottom: 16px;
+	}
+
+	.hero-content p {
+		max-width: 518px;
+		font-size: 20px;
+		letter-spacing: 0.5px;
+		line-height: 28px;
+		margin-bottom: 21px;
+		
+	}
+	.hero-content button {
+		height: 50px;
+		width: 220px;
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 24px;
+		
+	}
+	body {
+		padding-top: 80px;
+	}
+
+}
+/* End of Design for Large Desktops */
+
+/* Start of Design for Tablets */
+@media screen and (max-width:960px) {
+	.container {
+		max-width:92%;
+	}
+	header.logo {
+		
+		font-size: 24px;
+	}
+	header nav ul li {
+		display: none;
+	}
+
+		header nav ul li.menu-icon {
+			display: inline-block;
+		}
+	.hero-content h1 {
+		
+		font-size: 40px;
+		letter-spacing: 1px;
+		line-height: 46px;
+	
+	}
+
+	.hero-content p {
+	
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		line-height: 24px;
+		
+	}
+
+	.hero-content button {
+		
+		font-size: 14px;
+		letter-spacing: 0.35px;
+		line-height: 21px;
+		width:196px;
+	}
+	
+}
+/* End of Design for Tablets */
+
+/* Start of Design for Phones */
+@media screen and (max-width:576px) {
+	header.logo {
+		
+		font-size: 18px;
+	}
+		header .logo .blue-dot {
+			
+			width: 7px;
+			height: 7px;
+			
+		}
+	.hero-content {
+	position:static;
+
+	}
+		.hero-content h1 {
+			
+			color: #000;
+			font-size: 32px;
+			letter-spacing: 0.8px;
+			line-height: 38px;
+			text-align:center;
+			margin-bottom: 32px;
+			margin-top: 27px;
+			
+		}
+
+		.hero-content p {
+			display:none;
+		}
+
+
+		.hero-content button {
+			
+			width: 195px;
+			font-size: 14px;
+			letter-spacing: 0.35px;
+			line-height: 21px;
+			margin:auto;
+			
+		}
+}
+/* End of Design for Phones */
